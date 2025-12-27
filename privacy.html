@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>iVape Support</title>
+  <title>Privacy Policy – iVape</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -118,49 +118,39 @@
     }
 
     .hero {
-      text-align: center;
-      margin-bottom: 80px;
+      margin-bottom: 48px;
     }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-size: clamp(2rem, 6vw, 3rem);
       font-weight: 700;
       letter-spacing: -0.03em;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
 
-    .hero p {
-      font-size: 1.25rem;
+    .hero .updated {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .intro {
+      font-size: 1.1rem;
       color: var(--text-secondary);
-      max-width: 500px;
-      margin: 0 auto;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
     }
 
-    .cards {
-      display: grid;
-      gap: 20px;
+    .section {
+      margin-bottom: 40px;
     }
 
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 32px;
-      transition: all 0.3s ease;
-    }
-
-    .card:hover {
-      background: var(--bg-card-hover);
-      border-color: rgba(255, 255, 255, 0.12);
-      transform: translateY(-2px);
-    }
-
-    .card h2 {
-      font-size: 1.25rem;
+    .section h2 {
+      font-size: 1.15rem;
       font-weight: 600;
       margin-bottom: 12px;
       display: flex;
@@ -168,61 +158,54 @@
       gap: 12px;
     }
 
-    .card h2 .icon {
-      width: 40px;
-      height: 40px;
-      background: var(--accent-dim);
-      border-radius: 10px;
-      display: flex;
+    .section h2 .icon {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.25rem;
-    }
-
-    .card p {
-      color: var(--text-secondary);
+      width: 32px;
+      height: 32px;
+      background: var(--accent-dim);
+      border-radius: 8px;
       font-size: 1rem;
     }
 
-    .card a {
+    .section p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      padding-left: 44px;
+    }
+
+    .contact-box {
+      margin-top: 48px;
+      padding: 32px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .contact-box h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .contact-box p {
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .contact-box a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       color: var(--accent);
       text-decoration: none;
       font-weight: 500;
       transition: opacity 0.2s;
     }
 
-    .card a:hover {
+    .contact-box a:hover {
       opacity: 0.8;
-    }
-
-    .email-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--accent);
-      color: var(--bg-dark);
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 10px;
-      transition: all 0.2s ease;
-    }
-
-    .email-btn:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 30px var(--accent-dim);
-    }
-
-    .disclaimer {
-      margin-top: 80px;
-      padding: 24px;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      text-align: center;
     }
 
     footer {
@@ -262,11 +245,12 @@
         padding: 48px 20px 80px;
       }
 
-      .hero {
-        margin-bottom: 48px;
+      .section p {
+        padding-left: 0;
+        margin-top: 8px;
       }
 
-      .card {
+      .contact-box {
         padding: 24px;
       }
     }
@@ -280,45 +264,58 @@
     <div class="nav-inner">
       <a href="index.html" class="logo">iVape</a>
       <div class="nav-links">
-        <a href="index.html" class="active">Support</a>
+        <a href="index.html">Support</a>
         <a href="terms.html">Terms</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="privacy.html" class="active">Privacy</a>
       </div>
     </div>
   </nav>
 
   <main>
     <div class="hero">
-      <h1>Support</h1>
-      <p>Get help with iVape, a novelty entertainment app.</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: December 26, 2025</p>
     </div>
 
-    <div class="cards">
-      <div class="card">
-        <h2><span class="icon">💨</span> About iVape</h2>
-        <p>iVape is a novelty and entertainment application only. It does not simulate, promote, or encourage real-world vaping, smoking, or nicotine use. This app is purely for fun and creative expression.</p>
-      </div>
+    <p class="intro">iVape is a novelty application created for entertainment purposes only.</p>
 
-      <div class="card">
-        <h2><span class="icon">✉️</span> Contact Us</h2>
-        <p>For support, questions, feedback, or concerns, we're here to help.</p>
-        <a href="mailto:poemkillerlabs@gmail.com" class="email-btn">
-          <span>poemkillerlabs@gmail.com</span>
-          <span>→</span>
-        </a>
-      </div>
-
-      <div class="card">
-        <h2><span class="icon">📄</span> Legal Documents</h2>
-        <p>Review our policies to understand how the app works and your rights as a user.</p>
-        <p style="margin-top: 12px;">
-          <a href="terms.html">Terms & Conditions</a> · <a href="privacy.html">Privacy Policy</a>
-        </p>
-      </div>
+    <div class="section">
+      <h2><span class="icon">📊</span> Data Collection</h2>
+      <p>iVape does not collect, store, transmit, or share any personal data.</p>
     </div>
 
-    <div class="disclaimer">
-      iVape is not associated with, endorsed by, or affiliated with Geek Bar or any other vape, e-cigarette, or nicotine-related brand. All brand names referenced are the property of their respective owners.
+    <div class="section">
+      <h2><span class="icon">🎤</span> Microphone Access</h2>
+      <p>iVape may request access to the device microphone solely to detect breath sounds for triggering visual and haptic animations. All audio is processed entirely on-device and is never recorded, stored, or transmitted.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">📱</span> Device Sensors</h2>
+      <p>iVape may use device motion sensors or system volume changes to enable interactive effects. This information is used only in real time and is not stored or shared.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🔗</span> Third Parties</h2>
+      <p>iVape does not use third-party analytics, advertising SDKs, tracking technologies, or external services.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">👶</span> Children</h2>
+      <p>iVape is not intended for children and does not knowingly collect data from anyone under the age of 13.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🔄</span> Changes</h2>
+      <p>This Privacy Policy may be updated from time to time. Any changes will be reflected on this page.</p>
+    </div>
+
+    <div class="contact-box">
+      <h2>Contact</h2>
+      <p>If you have questions about this Privacy Policy, you may contact the developer at:</p>
+      <a href="mailto:poemkillerlabs@gmail.com">
+        <span>poemkillerlabs@gmail.com</span>
+        <span>→</span>
+      </a>
     </div>
   </main>
 
@@ -327,3 +324,4 @@
   </footer>
 </body>
 </html>
+

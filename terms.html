@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>iVape Support</title>
+  <title>Terms & Conditions – iVape</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -118,49 +118,39 @@
     }
 
     .hero {
-      text-align: center;
-      margin-bottom: 80px;
+      margin-bottom: 48px;
     }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-size: clamp(2rem, 6vw, 3rem);
       font-weight: 700;
       letter-spacing: -0.03em;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
 
-    .hero p {
-      font-size: 1.25rem;
+    .hero .updated {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .intro {
+      font-size: 1.1rem;
       color: var(--text-secondary);
-      max-width: 500px;
-      margin: 0 auto;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
     }
 
-    .cards {
-      display: grid;
-      gap: 20px;
+    .section {
+      margin-bottom: 40px;
     }
 
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 32px;
-      transition: all 0.3s ease;
-    }
-
-    .card:hover {
-      background: var(--bg-card-hover);
-      border-color: rgba(255, 255, 255, 0.12);
-      transform: translateY(-2px);
-    }
-
-    .card h2 {
-      font-size: 1.25rem;
+    .section h2 {
+      font-size: 1.15rem;
       font-weight: 600;
       margin-bottom: 12px;
       display: flex;
@@ -168,61 +158,23 @@
       gap: 12px;
     }
 
-    .card h2 .icon {
-      width: 40px;
-      height: 40px;
-      background: var(--accent-dim);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.25rem;
-    }
-
-    .card p {
-      color: var(--text-secondary);
-      font-size: 1rem;
-    }
-
-    .card a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      transition: opacity 0.2s;
-    }
-
-    .card a:hover {
-      opacity: 0.8;
-    }
-
-    .email-btn {
+    .section h2 .num {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--accent);
-      color: var(--bg-dark);
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 10px;
-      transition: all 0.2s ease;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--accent-dim);
+      color: var(--accent);
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
     }
 
-    .email-btn:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 30px var(--accent-dim);
-    }
-
-    .disclaimer {
-      margin-top: 80px;
-      padding: 24px;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      text-align: center;
+    .section p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      padding-left: 40px;
     }
 
     footer {
@@ -262,12 +214,9 @@
         padding: 48px 20px 80px;
       }
 
-      .hero {
-        margin-bottom: 48px;
-      }
-
-      .card {
-        padding: 24px;
+      .section p {
+        padding-left: 0;
+        margin-top: 8px;
       }
     }
   </style>
@@ -280,8 +229,8 @@
     <div class="nav-inner">
       <a href="index.html" class="logo">iVape</a>
       <div class="nav-links">
-        <a href="index.html" class="active">Support</a>
-        <a href="terms.html">Terms</a>
+        <a href="index.html">Support</a>
+        <a href="terms.html" class="active">Terms</a>
         <a href="privacy.html">Privacy</a>
       </div>
     </div>
@@ -289,36 +238,45 @@
 
   <main>
     <div class="hero">
-      <h1>Support</h1>
-      <p>Get help with iVape, a novelty entertainment app.</p>
+      <h1>Terms & Conditions</h1>
+      <p class="updated">Last updated: December 26, 2025</p>
     </div>
 
-    <div class="cards">
-      <div class="card">
-        <h2><span class="icon">💨</span> About iVape</h2>
-        <p>iVape is a novelty and entertainment application only. It does not simulate, promote, or encourage real-world vaping, smoking, or nicotine use. This app is purely for fun and creative expression.</p>
-      </div>
+    <p class="intro">By downloading or using iVape, you agree to the following terms.</p>
 
-      <div class="card">
-        <h2><span class="icon">✉️</span> Contact Us</h2>
-        <p>For support, questions, feedback, or concerns, we're here to help.</p>
-        <a href="mailto:poemkillerlabs@gmail.com" class="email-btn">
-          <span>poemkillerlabs@gmail.com</span>
-          <span>→</span>
-        </a>
-      </div>
-
-      <div class="card">
-        <h2><span class="icon">📄</span> Legal Documents</h2>
-        <p>Review our policies to understand how the app works and your rights as a user.</p>
-        <p style="margin-top: 12px;">
-          <a href="terms.html">Terms & Conditions</a> · <a href="privacy.html">Privacy Policy</a>
-        </p>
-      </div>
+    <div class="section">
+      <h2><span class="num">1</span> Novelty App Disclaimer</h2>
+      <p>iVape is a novelty and entertainment application only. It does not simulate, promote, or encourage real-world vaping, smoking, or nicotine use.</p>
     </div>
 
-    <div class="disclaimer">
-      iVape is not associated with, endorsed by, or affiliated with Geek Bar or any other vape, e-cigarette, or nicotine-related brand. All brand names referenced are the property of their respective owners.
+    <div class="section">
+      <h2><span class="num">2</span> No Health Claims</h2>
+      <p>iVape makes no health, medical, or lifestyle claims of any kind. It is not a cessation tool, replacement product, or wellness application.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">3</span> No Association</h2>
+      <p>iVape is not affiliated with, endorsed by, sponsored by, or associated with Geek Bar or any other vape, e-cigarette, or nicotine-related brand. All brand names referenced are the property of their respective owners.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">4</span> Use at Your Own Discretion</h2>
+      <p>You use iVape voluntarily and at your own discretion. The developer is not responsible for how the app is interpreted or used.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">5</span> No Warranty</h2>
+      <p>iVape is provided "as is," without warranties of any kind, express or implied.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">6</span> Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, the developer shall not be liable for any damages arising from the use of iVape.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">7</span> Changes</h2>
+      <p>These terms may be updated at any time. Continued use of the app constitutes acceptance of any changes.</p>
     </div>
   </main>
 
@@ -327,3 +285,4 @@
   </footer>
 </body>
 </html>
+
